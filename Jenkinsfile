@@ -7,6 +7,16 @@ pipeline{
                 sh 'echo hello world'
             }
         }
+        stage('Build'){
+            steps{
+                sh 'echo This is Build Phase'
+            }
+        }
+        stage('Deployment'){
+            steps{
+                sh 'This is deployment Phase'
+            }
+        }
     }
 
 }
